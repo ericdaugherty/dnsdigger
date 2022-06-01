@@ -1,13 +1,12 @@
 package dnsdigger
 
 import (
+	"context"
 	"errors"
 	"fmt"
 	"net"
 	"sort"
 	"strings"
-
-	"golang.org/x/net/context"
 )
 
 var owners = map[string]string{
